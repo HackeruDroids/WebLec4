@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!--our css:-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!--https://docs.emmet.io/abbreviations/-->
+        <!--div.row>div.col*3-->
+        <h1>Grid equal widths</h1>
+        <div class="row">
+            <div class="col purple">1 OF 3</div>
+            <div class="col pink">2 OF 3</div>
+            <div class="col purple">
+                <!--div.row>div.col.dashed*12>{x}-->
+                <div class="row">
+                    <div class="col dashed">x</div>
+                    <div class="col dashed">x</div>
+                    <div class="col dashed">x</div>
+                    <div class="col dashed">x</div>
+                    <div class="col dashed">x</div>
+                    <div class="col dashed">x</div>
+                    <div class="col dashed">x</div>
+                    <div class="col dashed">x</div>
+                    <div class="col dashed">x</div>
+                    <div class="col dashed">x</div>
+                    <div class="col dashed">x</div>
+                    <div class="col dashed">x</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col pink">1 of 2</div>
+            <div class="col purple">1 of 2</div>
+        </div>
+
+
+        <p>Set one column width</p>
+        <div class="row">
+            <div class="col purple">1 of 2</div>
+            <div class="col-8 pink">8 of 12</div>
+            <div class="col purple">2 of 2</div>
+        </div>
+
+
+        <p>auto width: wrap_content -> intrinsinc content size</p>
+        <div class="row">
+            <div class="col purple">1 of 2</div>
+            <div class="col-auto pink">wrap_content</div>
+            <div class="col purple">1 of 2</div>
+        </div>
+
+
+        <!--div.row>div.btn.btn-info.col*4>{Click}-->
+        <div class="row">
+            <!--Frowned upon-->
+            <div onclick="var x = 10; alert('Woot?!' + x);alert('YallA!');" class="btn btn-info col">code in html!</div>
+            <div onclick="myFunc()" class="btn btn-warning col">Click</div>
+            <div class="btn btn-info col">Click</div>
+            <div class="btn btn-warning col">Click</div>
+        </div>
+
+        <!--#out-->
+        <div id="out"></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="js/app.js"></script>
+</body>
+  
+</html>
